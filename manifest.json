@@ -1,0 +1,10 @@
+{
+    "short_name": "Nombre corto",
+    "name": "Nombre largo de mi aplicación chula",
+    "description": "La mejor PWA que existe",
+    "icons": [ ],
+    "start_url": "/",
+    "background_color": "#26AF31",
+    "display": "standalone",
+    "scope": "/"
+  }
