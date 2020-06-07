@@ -2,8 +2,14 @@
     "short_name": "Nombre corto",
     "name": "Nombre largo de mi aplicación chula",
     "description": "La mejor PWA que existe",
-    "icons": [ ],
-    "start_url": "/",
+    "icons": [
+        {
+            "src": "icon/pwa.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/index.html",
     "background_color": "#26AF31",
     "display": "standalone",
     "scope": "/"
