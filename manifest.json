@@ -4,7 +4,7 @@
     "description": "La mejor PWA que existe",
     "icons": [
         {
-            "src": "icon/pwa.png",
+            "src": "pwa.png",
             "sizes": "192x192",
             "type": "image/png"
         }
