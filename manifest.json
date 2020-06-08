@@ -1,7 +1,7 @@
 {
-    "short_name": "Nombre corto",
-    "name": "Nombre largo de mi aplicación chula",
-    "description": "La mejor PWA que existe",
+    "short_name": "Practica PAD",
+    "name": "Practica PAD PWA",
+    "description": "Aplicacion que representa la practica de PWA para la asignatura PAD",
     "icons": [
         {
             "src": "pwa.png",
@@ -10,7 +10,7 @@
         }
     ],
     "start_url": "index.html",
-    "background_color": "#26AF31",
+    "background_color": "#4C4C4C",
     "display": "standalone",
     "scope": "/"
   }
