@@ -126,13 +126,15 @@ window.onload = () => {
 
 }
 
-// utilizar service worker que ejecute esto cada vez que se entre a la web??
+
 function loadTaskList() {
    let tasks = JSON.parse(localStorage.getItem('tasks'))
    console.log('Cargando lista de tareas ' + tasks)
-   tasks.forEach((valor) => {
-      addTaskToList(valor)
-   })
+   if (tasks != null) {
+      tasks.forEach((valor) => {
+         addTaskToList(valor)
+      })
+   }
 }
 
 function addTask(value) {
