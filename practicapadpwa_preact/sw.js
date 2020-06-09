@@ -9,4 +9,14 @@ workbox.precaching.precacheAndRoute([
   {url: 'manifest.json', revision: null},
   {url: 'pwa.png', revision: null}
 ])
-registerRoute('https://unpkg.com/htm/preact/standalone.module.js', new NetWorkFirst())
+
+registerRoute(
+  'https://unpkg.com/htm/preact/standalone.module.js',
+  new CacheFirst({
+    plugins: [
+      new CacheableResponsePlugin({
+        statuses: [0, 200]
+      })
+    ]
+  }),
+)
