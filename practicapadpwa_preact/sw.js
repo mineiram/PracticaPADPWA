@@ -9,4 +9,4 @@ workbox.precaching.precacheAndRoute([
   {url: 'manifest.json', revision: null},
   {url: 'pwa.png', revision: null}
 ])
-globalThis.toolbox.cache('https://unpkg.com/htm/preact/standalone.module.js')
+registerRoute('https://unpkg.com/htm/preact/standalone.module.js', new NetWorkFirst())
