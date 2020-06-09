@@ -2,6 +2,17 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox
 
 console.log(`Workbox ${workbox ? 'sí' : 'no'} está funcionando`)
 
+workbox.routing.registerRoute(
+  'https://unpkg.com/htm/preact/standalone.module.js',
+  new workbox.strategies.CacheFirst({
+    plugins: [
+      new workbox.cacheableResponse.CacheableResponsePlugin({
+        statuses: [0, 200]
+      })
+    ]
+  }),
+)
+
 workbox.precaching.precacheAndRoute([
   {url: 'index.html', revision: null },
   {url: 'gui.js', revision: null},
@@ -9,14 +20,3 @@ workbox.precaching.precacheAndRoute([
   {url: 'manifest.json', revision: null},
   {url: 'pwa.png', revision: null}
 ])
-
-registerRoute(
-  'https://unpkg.com/htm/preact/standalone.module.js',
-  new CacheFirst({
-    plugins: [
-      new CacheableResponsePlugin({
-        statuses: [0, 200]
-      })
-    ]
-  }),
-)
