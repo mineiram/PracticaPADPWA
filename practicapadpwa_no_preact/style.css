@@ -1,0 +1,15 @@
+#taskListDiv button {
+    display: block;
+}
+
+.contentTaskDivButtons button {
+    display: inline !important;
+}
+
+.contentTaskDiv input + div, .addTaskDivContent input + div {
+    display: block;
+}
+
+button {
+    margin-bottom: 20px;
+}
